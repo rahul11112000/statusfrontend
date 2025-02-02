@@ -1,7 +1,7 @@
 import axios from "axios";
 // import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 
-const API_BASE_URL = "http://statusapplication.ap-south-1.elasticbeanstalk.com";
+const API_BASE_URL = "http://applicationstatus.ap-south-1.elasticbeanstalk.com";
 
 export const getApp = async (token) => {
     try {
