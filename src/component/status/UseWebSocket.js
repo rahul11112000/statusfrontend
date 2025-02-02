@@ -14,7 +14,7 @@ const useWebSocket = () => {
         }
 
         // Fetch initial data
-        axios.get(`http://localhost:8080/status/get-all/status/${com_id}`, {
+        axios.get(`http://applicationstatus.us-east-1.elasticbeanstalk.com/status/get-all/status/${com_id}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json"
@@ -25,7 +25,7 @@ const useWebSocket = () => {
 
         // Setup WebSocket connection
         const client = new Client({
-            brokerURL: "ws://localhost:8080/ws/websocket", // WebSocket URL
+            brokerURL: "ws://applicationstatus.us-east-1.elasticbeanstalk.com/ws/websocket", // WebSocket URL
             reconnectDelay: 5000, // Auto-reconnect
             connectHeaders: {
                 Authorization: `Bearer ${token}` // Pass token in headers

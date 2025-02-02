@@ -1,7 +1,7 @@
 import axios from "axios";
 // import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "http://applicationstatus.us-east-1.elasticbeanstalk.com";
 
 export const signUp = async (formData) => {
   try {
