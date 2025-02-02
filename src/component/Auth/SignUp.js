@@ -26,7 +26,7 @@ const SignUp = () => {
     try {
       const response = await signUp(formData); // Call the API
       setMessage({ type: "success", text: "Sign-up successful!" });
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       setMessage({
         type: "error",
